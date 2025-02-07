@@ -1,6 +1,9 @@
 import asyncio
 import telegram
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 
