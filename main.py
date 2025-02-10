@@ -28,6 +28,7 @@ async def caps(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 if __name__ == '__main__':
     application = ApplicationBuilder().token(TOKEN).build()
+
     start_handler = CommandHandler(command= 'start', callback= start)
     caps_handler = CommandHandler(command= 'caps', callback= caps)
     echo_handler = MessageHandler(filters.TEXT & (~filters.COMMAND), echo)
